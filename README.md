@@ -1,4 +1,5 @@
 # Epic Beaker-Aligned Laboratory Workflow Portfolio (In Progress)
+> Simulating the Epic Beaker laboratory implementation lifecycle through workflow modeling, system integration, and operational analysis.
 
 ## Overview
 This portfolio simulates end-to-end clinical laboratory workflows aligned to Epic Beaker concepts, with a focus on the full **order-to-result lifecycle**, system integration, and operational performance.
