@@ -1,0 +1,114 @@
+# Specimen Source Standardization Issue – Catheter-Related Cultures
+
+## Overview
+During Epic Beaker test build validation, a limitation was identified in catheter-related culture orderables and specimen source selection. The current configuration does not adequately represent the range of catheter-associated specimens encountered in clinical workflows.
+
+This issue highlights a gap between system build design and real-world laboratory operations, with potential downstream impacts on data integrity, reporting, and infection control tracking.
+
+---
+
+## Clinical Context
+Microbiology workflows frequently involve cultures collected from various catheter-associated sources, including:
+
+- Urinary catheters (Foley)
+- Central lines
+- Drain tubing
+- Other device-associated specimens
+
+Accurate specimen source documentation is critical for:
+- Clinical interpretation
+- Infection control classification (e.g., CAUTI vs CLABSI)
+- Reporting and analytics
+
+---
+
+## Observed Issue
+
+### Order Entry
+- Only **“Catheter”** and **“Catheter Tip”** are available as specimen source options
+- No differentiation between catheter types or device categories
+
+### Collection Labeling
+- Collection print labels default to **“Catheter Tip”** as the source
+- No dynamic mapping based on actual specimen type
+
+---
+
+## Workflow Breakdown
+
+1. Provider places order for catheter-associated culture
+2. Limited source options force generalized or inaccurate selection
+3. Collection labels reflect incorrect or overly broad source
+4. Specimen processed in microbiology without clear device context
+
+---
+
+## Root Cause Analysis (Hypothesis)
+
+- **Specimen source dictionary is underdeveloped**
+- Incomplete mapping between:
+  - Orderables → Specimen sources
+  - Specimen sources → Label print logic
+- Build likely simplified during initial configuration without full microbiology input
+
+---
+
+## Downstream Impact
+
+### Data Integrity
+- Loss of specificity in specimen source data
+- Inconsistent or incorrect categorization across cases
+
+### Infection Control
+- Risk of misclassification:
+  - CAUTI (urinary catheter)
+  - CLABSI (central line)
+- Impacts surveillance and reporting systems
+
+### Operational Workflow
+- Increased ambiguity at the bench
+- Potential for recollection or clarification delays
+
+### Reporting & Analytics
+- Distorted metrics when grouping by specimen source
+- Reduced reliability of downstream dashboards and TAT analysis
+
+---
+
+## Recommended Solution
+
+### 1. Expand Specimen Source Dictionary
+Introduce standardized, clinically relevant categories:
+- Urinary Catheter (Foley)
+- Central Line
+- Drain Tubing
+- Other Device-Associated Sources
+
+### 2. Align Orderable Mapping
+- Ensure orderables map to appropriate specimen source categories
+- Avoid overly generalized defaults
+
+### 3. Update Label Logic
+- Ensure specimen source printed on labels reflects actual selected source
+- Maintain consistency between order entry and downstream processing
+
+---
+
+## Systems Impact
+
+- Epic Beaker build configuration (orderables, specimen source dictionary)
+- LIS data integrity and workflow consistency
+- Infection control systems (e.g., downstream surveillance reporting)
+- Reporting layers (SQL-based analytics, dashboards)
+
+---
+
+## Analyst Takeaway
+
+This case demonstrates how seemingly minor build constraints can lead to:
+
+- Workflow ambiguity
+- Data integrity issues
+- Downstream reporting inaccuracies
+
+Accurate representation of specimen sources is essential for maintaining alignment between clinical workflows and system design.
