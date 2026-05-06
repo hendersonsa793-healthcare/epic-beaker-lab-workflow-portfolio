@@ -1,4 +1,4 @@
-# Microbiology Workflow Issue – Missing Thayer-Martin Media for Genital Cultures
+# Missing Thayer-Martin Media for Genital Cultures
 
 ## Problem
 Genital-source wound culture workflows did not include Thayer-Martin agar as an available or default media option, despite its clinical relevance for recovery of *Neisseria gonorrhoeae*.
