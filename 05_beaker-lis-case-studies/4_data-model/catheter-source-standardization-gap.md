@@ -177,24 +177,8 @@ A limited source configuration can create ambiguity across:
 For Epic Beaker and LIS analysts, accurate source standardization is a core part of maintaining clinical and operational data integrity.
 
 ---
+## Follow-Up
 
-## Skills Demonstrated
-- Epic Beaker workflow validation
-- LIS source mapping analysis
-- Microbiology workflow analysis
-- Specimen labeling review
-- Data integrity assessment
-- Infection control reporting awareness
-- Root cause analysis
-- Analyst-style documentation
+Following review, the concern was escalated for broader discussion regarding standardized capture of catheter source information across workflows.
 
----
-
-## Related Concepts
-- Epic Beaker orderable build
-- Specimen source dictionary
-- Collection label logic
-- LIS-to-reporting data flow
-- Infection prevention surveillance
-- Data governance
-- Microbiology workflow standardization
+This reinforced the importance of structured anatomical context within microbiology order entry and downstream reporting workflows.
