@@ -1,4 +1,4 @@
-# Beaker Case Study: Joint Culture Plate Setup Gap
+# Joint Culture Plate Setup Gap
 
 ## Case Summary
 
