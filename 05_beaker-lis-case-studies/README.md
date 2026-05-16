@@ -56,6 +56,7 @@ Key concepts:
 
 Example:
 - Panther LIS order retrieval failure (single-order accession condition)
+- Blood Culture Receiving Failure Due to Specimen Source Configuration Change
 
 ---
 
