@@ -1,0 +1,116 @@
+# Blood Culture Receiving Failure Due to Specimen Source Configuration Change
+
+## Overview
+
+A laboratory workflow issue was identified involving blood culture specimen receiving within the LIS environment.
+
+The specimen source description for blood cultures (`BLD` – Blood) had been reconfigured in a manner that prevented the source from being properly recognized during specimen receiving workflows.
+
+This issue created an operational failure where blood culture specimens could not be received correctly within the laboratory information system.
+
+The issue was identified during active laboratory operations and escalated to the Sunquest LIS support team for correction.
+
+---
+
+# Operational Context
+
+Blood cultures are high-priority microbiology specimens with critical downstream workflow dependencies including:
+
+- Accessioning
+- Specimen receiving
+- Instrument routing
+- Bottle setup workflows
+- Gram stain workflows
+- Result reporting
+- Critical value communication
+
+Because blood cultures are highly workflow-dependent, specimen source configuration integrity is essential for uninterrupted laboratory operations.
+
+---
+
+# Problem Identified
+
+During specimen receiving workflows, blood culture specimens associated with the `BLD` specimen source could not be processed correctly.
+
+Investigation revealed that the specimen source description/configuration had been modified in a way that disrupted receiving functionality within the LIS.
+
+This resulted in:
+
+- Receiving workflow failures
+- Delayed specimen processing
+- Increased manual troubleshooting
+- Potential downstream workflow disruption for microbiology operations
+
+---
+
+# Root Cause Analysis
+
+Initial investigation suggested the issue was related to specimen source configuration logic within the LIS environment.
+
+The `BLD` (Blood) source description had been altered such that:
+
+- The source no longer mapped correctly to receiving workflows
+- The specimen source became unavailable or invalid during accessioning/receiving operations
+- Downstream workflow dependencies failed validation
+
+This demonstrated how seemingly small configuration changes can propagate into major operational disruptions within laboratory workflows.
+
+---
+
+# Actions Taken
+
+## Workflow Investigation
+
+- Identified that the issue was isolated specifically to blood culture receiving workflows
+- Compared expected vs observed specimen receiving behavior
+- Verified issue reproducibility during active workflow processing
+
+## Collaboration with LIS Team
+
+- Escalated findings to Sunquest LIS support personnel
+- Communicated suspected configuration dependency issue
+- Assisted with operational validation of the workflow failure
+
+## Resolution Support
+
+- Participated in confirming restoration of expected receiving functionality
+- Verified corrected behavior within blood culture receiving workflows
+
+---
+
+# Technical / Informatics Concepts Demonstrated
+
+- Laboratory Information Systems (LIS)
+- Sunquest workflow troubleshooting
+- Specimen source configuration dependencies
+- Receiving workflow validation
+- Workflow interruption analysis
+- Root cause investigation
+- Clinical operations escalation
+- Order-to-result dependency awareness
+
+---
+
+# Analyst Relevance
+
+This issue reflects a common category of clinical systems incidents where:
+
+- Small configuration changes create large operational failures
+- Workflow dependencies are not immediately obvious
+- Clinical staff and LIS analysts must collaborate rapidly
+- Operational continuity depends on accurate build/configuration management
+
+The case demonstrates practical understanding of how LIS configuration directly impacts real-time laboratory operations.
+
+---
+
+# Key Takeaway
+
+Laboratory workflows are highly interconnected systems.
+
+Even minor configuration-level changes to specimen source logic can create cascading failures affecting specimen processing, receiving workflows, and downstream clinical operations.
+
+Effective LIS analysts must understand both:
+
+- Technical system configuration
+- Real-world laboratory workflow behavior
