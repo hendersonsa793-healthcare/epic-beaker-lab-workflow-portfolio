@@ -30,6 +30,7 @@ Key concepts:
 
 Example:
 - Blood culture reflex workflow design misalignment
+- Surgical Culture Workflow Standardization and Source Mapping Misalignment
 
 ---
 
@@ -43,7 +44,6 @@ Key concepts:
 
 Example:
 - Missing Thayer-Martin media for genital cultures
-- Surgical Culture Workflow Standardization and Source Mapping Misalignment
 
 ---
 
